@@ -1,2 +1,2 @@
-# cny-rat-svg-animation
-SVG timed animation showing transition from  2002 to mouse head
+# CNY Rat SVG Animation
+SVG timed animation showing transition from 2020 to mouse head
