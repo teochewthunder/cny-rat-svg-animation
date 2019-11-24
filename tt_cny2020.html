@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CNY 2020</title>
+
+		<style>
+			body
+			{
+				background-color: #FF4400;
+				font-size: 10px;
+			}
+
+			#svgContainer
+			{
+				width: 800px;
+				height: 400px;
+				margin: 10% auto 0 auto;
+				outline: 1px solid #FF0000;
+			}
+
+			svg
+			{
+				width: 800px;
+				height: 400px;
+			}
+
+			line, ellipse, path, text
+			{
+				stroke-width: 3em;
+				stroke: rgba(255, 0, 0, 1);
+				fill: none;
+			}
+
+			text
+			{
+				stroke-width: 1px;
+				fill: rgba(255, 0, 0, 1);
+				font: bold 40px arial;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="svgContainer">
+			<svg>
+				<path d="M 150 100 q 200 75 0 200">
+					<animate 
+						id="animateFlipCurve"
+						attributeName="d" 
+						from="M 150 100 q 200 75 0 200" 
+						to="M 150 100 q -200 75 0 200"
+						fill="freeze" 
+						begin="2s"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+						id="animateMoveCurve"
+					    dur="0.5s"
+					    begin="animateFlipCurve.end"
+					    fill="freeze"
+					    path="M 0 0 l 250 0" 
+					/>
+				</path>
+
+				<line x1="140" y1="300" x2="250" y2="300">
+					<animate 
+						attributeName="x2" 
+						from="250" 
+						to="50"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="x1" 
+						from="140" 
+						to="160"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+					    dur="0.5s"
+					    begin="animateFlipCurve.end"
+					    fill="freeze"
+					    path="M 0 0 l 250 0" 
+					/>
+
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 160 305"
+                        to="-5 160 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<line x1="140" y1="300" x2="250" y2="300">
+					<animate 
+						attributeName="x2" 
+						from="250" 
+						to="50"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="x1" 
+						from="140" 
+						to="160"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+					    dur="0.5s"
+					    begin="animateFlipCurve.end"
+					    fill="freeze"
+					    path="M 0 0 l 250 0" 
+					/>
+
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 160 305"
+                        to="-15 160 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<line x1="140" y1="300" x2="250" y2="300">
+					<animate 
+						attributeName="x2" 
+						from="250" 
+						to="50"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="x1" 
+						from="140" 
+						to="160"
+						fill="freeze" 
+						begin="animateFlipCurve.begin"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+					    dur="0.5s"
+					    begin="animateFlipCurve.end"
+					    fill="freeze"
+					    path="M 0 0 l 250 0" 
+					/>
+
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 160 305"
+                        to="-25 160 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<ellipse cx="335" cy="200" rx="40" ry="100">
+					<animate 
+						id="animateEllipseSize1"
+						attributeName="ry" 
+						from="100" 
+						to="70"
+						fill="freeze" 
+						begin="animateFlipCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="rx" 
+						from="40" 
+						to="70"
+						fill="freeze" 
+						begin="animateFlipCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="cy" 
+						from="200" 
+						to="100"
+						fill="freeze" 
+						begin="animateEllipseSize1.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+					    dur="0.5s"
+					    begin="animateMoveCurve.end+1s"
+					    fill="freeze"
+					    path="M 0 0 l -70 0" 
+					/>
+				</ellipse>
+
+				<path d="M 425 100 q 200 75 0 200" />
+
+				<line x1="415" y1="300" x2="525" y2="300">
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 415 305"
+                        to="5 415 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<line x1="415" y1="300" x2="525" y2="300">
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 415 305"
+                        to="15 415 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<line x1="415" y1="300" x2="525" y2="300">
+					<animate 
+						attributeName="stroke-width" 
+						from="3em" 
+						to="1em"
+						fill="freeze" 
+						begin="animateMoveCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+        			<animateTransform 
+        				attributeName="transform"
+                        type="rotate"
+                        from="0 415 305"
+                        to="25 415 305"
+						begin="animateMoveCurve.end"
+					    fill="freeze"
+                        dur="0.5s"
+                        repeatCount="1"
+                    />
+				</line>
+
+				<ellipse cx="615" cy="200" rx="40" ry="100">
+					<animate 
+						id="animateEllipseSize2"
+						attributeName="ry" 
+						from="100" 
+						to="70"
+						fill="freeze" 
+						begin="animateFlipCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="rx" 
+						from="40" 
+						to="70"
+						fill="freeze" 
+						begin="animateFlipCurve.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animate 
+						attributeName="cy" 
+						from="200" 
+						to="100"
+						fill="freeze" 
+						begin="animateEllipseSize2.end"
+						dur="0.5s" 
+						repeatCount="1" 
+					/>
+
+					<animateMotion 
+					    dur="0.5s"
+					    begin="animateMoveCurve.end+1s"
+					    fill="freeze"
+					    path="M 0 0 l -50 0" 
+					/>
+				</ellipse>
+
+				<text x="150" y="400">
+					HAPPY YEAR OF THE RAT
+				</text>
+			</svg>
+		</div>
+	</body>
+</html>
