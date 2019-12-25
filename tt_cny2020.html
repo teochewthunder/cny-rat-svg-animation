@@ -15,7 +15,7 @@
 				width: 800px;
 				height: 400px;
 				margin: 10% auto 0 auto;
-				outline: 1px solid #FF0000;
+				outline: 0px solid #FF0000;
 			}
 
 			svg
@@ -57,39 +57,19 @@
 
 					<animateMotion 
 						id="animateMoveCurve"
-					    dur="0.5s"
-					    begin="animateFlipCurve.end"
 					    fill="freeze"
+					    begin="animateFlipCurve.end"
+					    dur="0.5s"
 					    path="M 0 0 l 250 0" 
 					/>
 				</path>
 
 				<line x1="140" y1="300" x2="250" y2="300">
-					<animate 
-						attributeName="x2" 
-						from="250" 
-						to="50"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
-					<animate 
-						attributeName="x1" 
-						from="140" 
-						to="160"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
 					<animateMotion 
 					    dur="0.5s"
 					    begin="animateFlipCurve.end"
 					    fill="freeze"
-					    path="M 0 0 l 250 0" 
+					    path="M 0 0 l 160 0" 
 					/>
 
 					<animate 
@@ -105,8 +85,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 160 305"
-                        to="-5 160 305"
+                        from="0 250 300"
+                        to="-5 250 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -115,31 +95,11 @@
 				</line>
 
 				<line x1="140" y1="300" x2="250" y2="300">
-					<animate 
-						attributeName="x2" 
-						from="250" 
-						to="50"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
-					<animate 
-						attributeName="x1" 
-						from="140" 
-						to="160"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
 					<animateMotion 
 					    dur="0.5s"
 					    begin="animateFlipCurve.end"
 					    fill="freeze"
-					    path="M 0 0 l 250 0" 
+					    path="M 0 0 l 160 0" 
 					/>
 
 					<animate 
@@ -155,8 +115,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 160 305"
-                        to="-15 160 305"
+                        from="0 250 300"
+                        to="-15 250 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -165,31 +125,11 @@
 				</line>
 
 				<line x1="140" y1="300" x2="250" y2="300">
-					<animate 
-						attributeName="x2" 
-						from="250" 
-						to="50"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
-					<animate 
-						attributeName="x1" 
-						from="140" 
-						to="160"
-						fill="freeze" 
-						begin="animateFlipCurve.begin"
-						dur="0.5s" 
-						repeatCount="1" 
-					/>
-
 					<animateMotion 
 					    dur="0.5s"
 					    begin="animateFlipCurve.end"
 					    fill="freeze"
-					    path="M 0 0 l 250 0" 
+					    path="M 0 0 l 160 0" 
 					/>
 
 					<animate 
@@ -205,8 +145,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 160 305"
-                        to="-25 160 305"
+                        from="0 250 300"
+                        to="-25 250 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -246,11 +186,14 @@
 						repeatCount="1" 
 					/>
 
-					<animateMotion 
-					    dur="0.5s"
-					    begin="animateMoveCurve.end+1s"
-					    fill="freeze"
-					    path="M 0 0 l -70 0" 
+					<animate 
+						attributeName="cx" 
+						from="335" 
+						to="265"
+						fill="freeze" 
+						begin="animateEllipseSize1.end"
+						dur="0.5s" 
+						repeatCount="1" 
 					/>
 				</ellipse>
 
@@ -270,8 +213,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 415 305"
-                        to="5 415 305"
+                        from="0 415 300"
+                        to="5 415 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -293,8 +236,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 415 305"
-                        to="15 415 305"
+                        from="0 415 300"
+                        to="15 415 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -316,8 +259,8 @@
         			<animateTransform 
         				attributeName="transform"
                         type="rotate"
-                        from="0 415 305"
-                        to="25 415 305"
+                        from="0 415 300"
+                        to="25 415 300"
 						begin="animateMoveCurve.end"
 					    fill="freeze"
                         dur="0.5s"
@@ -357,11 +300,14 @@
 						repeatCount="1" 
 					/>
 
-					<animateMotion 
-					    dur="0.5s"
-					    begin="animateMoveCurve.end+1s"
-					    fill="freeze"
-					    path="M 0 0 l -50 0" 
+					<animate 
+						attributeName="cx" 
+						from="615" 
+						to="565"
+						fill="freeze" 
+						begin="animateEllipseSize2.end"
+						dur="0.5s" 
+						repeatCount="1" 
 					/>
 				</ellipse>
 
