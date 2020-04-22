@@ -1,5 +1,5 @@
 # CNY Rat SVG Animation 
-This SVG is an example of timed animations using object properties. *fill = freeze* is used quite liberally here, to ensure that the animated object "freezes" in its end state until animated again.
+This SVG is an example of timed animations using object properties. `fill = freeze` is used quite liberally here, to ensure that the animated object "freezes" in its end state until animated again.
 
 ## "2"
 - use a line tag for the horizontal stroke.
